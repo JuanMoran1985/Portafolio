@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Login</title>
         <link rel="stylesheet" href="css/foundation.css">
         <link rel="stylesheet" href="css/app.css">
         <link rel="stylesheet" href="css/portafolio.css">
@@ -17,7 +17,7 @@
     </head>
 <body>
    
-    <form onsubmit="validarLogin()" data-abide novalidate>
+    <form action="loginServlet" onsubmit="validarLogin()" data-abide novalidate>
   <div class="grid-container callout login align-center-middle">
     <div class="grid-x grid-padding-x">
       <div class="medium-12 cell">
@@ -29,8 +29,9 @@
       </div>
       <div class="medium-12 cell">
         <label>Password
-            <input type="text" placeholder="Password" id="pass">
+            <input type="text" placeholder="Password" id="pass" required="">
         </label>
+          <span class="form-error" data-form-error-for="pass">Debe ingresar su password.</span>
       </div>
       <div class="medium-12 cell">
         <label>
