@@ -6,27 +6,27 @@
         <title>JSP Page</title>
         <link rel="stylesheet" href="css/foundation.css">
         <link rel="stylesheet" href="css/app.css">
-        <link rel="stylesheet" href="css/portafolio.css">
     </head>
-<body> 
-<div data-sticky-container>
-<div class="title-bar" data-sticky data-options="marginTop:0;">
-<div class="row">
-  <div class="columns">
-    <ul class="menu">
-      <li class="is-active"><a href="#">ORDEN DE COMPRA</a></li>
-      <li><a href="#">CLIENTES</a></li>
-      <li><a href="#">VENTA</a></li>
-      <li><a href="#">USUARIOS</a></li>
-    </ul>
-  </div>
-</div>
-    </div>
-    </div>
-</body>
-<script src="js/vendor/jquery.js"></script>
-<script src="js/vendor/what-input.js"></script>
-<script src="js/vendor/foundation.js"></script>  
-<script src="js/app.js"></script>
-  
+    <body> 
+        <header>
+            <div class="top-bar" id="example-menu">
+                <ul class= "menu" data-dropdown-menu>
+                    <li class="menu-text">Gestion de almacenes</li>
+                </ul>
+            </div>
+        </header>
+        <nav>
+            <ul class="menu expanded">
+                <li><a href="#">Orden de compra</a></li>
+                <li><a href="#">Clientes</a></li>
+                <li><a href="#">Ventas</a></li>
+                <li><a href="#">Usuario</a></li>
+                <li><a href="#">Reportes</a></li>
+            </ul>
+        </nav>
+    </body>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>  
+    <script src="js/app.js"></script>
 </html>
