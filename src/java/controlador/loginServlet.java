@@ -5,6 +5,7 @@
  */
 package controlador;
 
+import com.sun.java.swing.plaf.windows.resources.windows;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -34,7 +35,13 @@ public class loginServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             
-            response.sendRedirect("header.jsp");
+            boolean login = true;
+            if(login){
+                response.sendRedirect("clientes.jsp");
+            } else {
+                
+                response.sendRedirect("login.jsp");
+            } 
         }
     }
 

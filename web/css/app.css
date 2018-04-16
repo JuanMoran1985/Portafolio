@@ -7,4 +7,16 @@
 
 .top-bar {
     padding-left: 0px;
+    background-color: white;
 }
+
+.menu-text {
+    background-color: white;
+}
+
+article {
+    background-color: #dedede;
+    padding: 24px;
+}
+
+ .size-24 { font-size: 24px; }
