@@ -1,3 +1,4 @@
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -9,24 +10,8 @@
         <link rel="stylesheet" href="icons/foundation-icons.css">
     </head>
     <body> 
-        <header>
-            <div class="top-bar" id="example-menu">
-                <ul class= "menu" data-dropdown-menu>
-                    <li class="menu-text">Gestion de almacenes</li>
-                </ul>
-            </div>
-        </header>
-        <nav>
-            <ul class="menu ">
-                <li><a href="ordenDeCompra.jsp">Orden de compra</a></li>
-                <li><a href="clientes.jsp">Clientes</a></li>
-                <li><a href="ventas.jsp">Ventas</a></li>
-                <li><a href="usuarios.jsp">Usuario</a></li>
-                <li class="is-active"><a href="reportes.jsp">Reportes</a></li>
-            </ul>
-        </nav>
+        <jsp:include page="header.jsp" flush="true"/>
         <article>
-
             <table class="hover">
                 <thead>
                     <tr>
